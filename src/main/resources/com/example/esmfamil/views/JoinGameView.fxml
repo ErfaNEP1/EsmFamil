@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="800.0" style="-fx-background-color: #fff;" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esmfamil.Controllers.JoinGameController">
+   <children>
+      <Rectangle height="300.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="800.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.6784313917160034" green="0.32549020648002625" blue="0.5372549295425415" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.23529411852359772" green="0.062745101749897" blue="0.32549020648002625" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="279.0" layoutX="14.0" layoutY="11.0" opacity="0.26" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="773.0" />
+      <TextField fx:id="userNameField" alignment="CENTER_RIGHT" focusTraversable="false" layoutX="421.0" layoutY="41.0" prefHeight="54.0" prefWidth="289.0" promptText="نام کاربری" style="-fx-border-radius: 0; -fx-background-radius: 50; -fx-border-width: 0;">
+         <font>
+            <Font name="B Mitra" size="22.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="listGames" layoutX="395.0" layoutY="119.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="155.0" prefWidth="341.0">
+        <columns>
+          <TableColumn fx:id="nameFieldTable" editable="false" prefWidth="75.0" sortable="false" text="نام" />
+            <TableColumn fx:id="modeFieldTable" editable="false" prefWidth="75.0" sortable="false" text="نوع بازی" />
+            <TableColumn fx:id="roundFieldTable" editable="false" prefWidth="75.0" sortable="false" text="تعداد دور" />
+            <TableColumn fx:id="timeFieldTable" editable="false" prefWidth="75.0" sortable="false" text="زمان هر دور" />
+        </columns>
+      </TableView>
+      <Button fx:id="joinGame" layoutX="117.0" layoutY="174.0" mnemonicParsing="false" onAction="#joinGame" prefHeight="45.0" prefWidth="202.0" style="-fx-background-color: #14C38E;" text="اضافه شدن به بازی" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button fx:id="getToMainMenu" layoutX="94.0" layoutY="108.0" mnemonicParsing="false" onAction="#getToMainMenu" prefHeight="45.0" prefWidth="247.0" style="-fx-background-color: #EB5353;" text="بازگشت به صفحه اصلی" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

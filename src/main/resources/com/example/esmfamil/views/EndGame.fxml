@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esmfamil.Controllers.EndGameController">
+   <children>
+      <TableView fx:id="playersTable" layoutX="121.0" layoutY="79.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="211.0" prefWidth="360.0">
+        <columns>
+          <TableColumn fx:id="usernameCol" prefWidth="180.0" text="نام کاربری" />
+          <TableColumn fx:id="scoreCol" prefWidth="180.0" text="امتیاز" />
+        </columns>
+      </TableView>
+      <Label layoutX="227.0" layoutY="14.0" text="امتیاز بازیکنان">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="backToMainMenu" onAction="#backtomainmenu" layoutX="226.0" layoutY="329.0" mnemonicParsing="false" style="-fx-background-color: #EB5353;" text="برگشت به منو" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

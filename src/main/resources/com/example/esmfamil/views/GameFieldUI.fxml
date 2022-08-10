@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER" type="javafx.scene.layout.VBox" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+    <Label fx:id="fieldName" alignment="CENTER" prefHeight="17.0" prefWidth="143.0" text="اسم">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <TextField fx:id="fieldInput" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="90.0"/>
+</fx:root>
